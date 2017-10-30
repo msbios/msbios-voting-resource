@@ -5,7 +5,6 @@
  */
 namespace MSBios\Voting\Resource\Form;
 
-use MSBios\Voting\Resource\Doctrine\Form\Element\PollSelect;
 use Zend\Form\Element\Text;
 use Zend\Form\Form;
 
@@ -21,8 +20,14 @@ class OptionForm extends Form
             'type' => Text::class,
             'name' => 'name'
         ])->add([
-            'type' => PollSelect::class,
+            'type' => Text::class,
             'name' => 'poll'
+        ])->add([
+            'type' => Text::class,
+            'name' => 'ponderability'
+        ])->add([
+            'type' => Text::class,
+            'name' => 'priority'
         ]);
     }
 }
