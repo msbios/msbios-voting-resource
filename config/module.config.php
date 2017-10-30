@@ -11,8 +11,10 @@ return [
     'form_elements' => [
         'factories' => [
             // Forms
-            Form\PollForm::class => InvokableFactory::class,
-            Form\OptionForm::class => InvokableFactory::class,
+            Form\PollForm::class =>
+                InvokableFactory::class,
+            Form\OptionForm::class =>
+                InvokableFactory::class,
         ]
     ],
 ];

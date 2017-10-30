@@ -18,6 +18,9 @@ class PollForm extends Form
     {
         $this->add([
             'type' => Text::class,
+            'name' => 'code'
+        ])->add([
+            'type' => Text::class,
             'name' => 'subject'
         ]);
     }
