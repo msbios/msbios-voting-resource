@@ -4,36 +4,23 @@
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
 
-namespace MSBios\Voting\Resource\Entity;
-
-use Doctrine\ORM\Mapping as ORM;
+namespace MSBios\Voting\Resource\Record;
 
 /**
  * Class Vote
- * @package MSBios\Voting\Resource\Entity
- *
- * @ORM\Entity
- * @ORM\Table(name="vot_t_votes",
- *     indexes={
- *          @ORM\Index(name="rowstatus", columns={"rowstatus"})}
- *     )
+ * @package MSBios\Voting\Resource\Record
  */
 class Vote
 {
     /**
      * @var integer
      *
-     * @ORM\Column(name="id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
      * @var Poll
      *
-     * @ORM\ManyToOne(targetEntity="Poll")
-     * @ORM\JoinColumn(name="pollid", referencedColumnName="id")
      */
     private $poll;
 
