@@ -6,40 +6,24 @@
 
 namespace MSBios\Voting\Resource\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-
 /**
  * Class Poll
  * @package MSBios\Voting\Resource\Entity
- *
- * @ORM\Entity
- * @ORM\Table(name="vot_t_polls",
- *     indexes={
- *          @ORM\Index(name="rowstatus", columns={"rowstatus"})}
- *     )
  */
 class Poll
 {
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="subject", type="string", length=255)
      */
     private $subject;
 
     /**
      * @var string SUM(Vote::$total)|SUM(Option::$total)
-     *
-     * @ORM\Column(name="total", type="integer", length=255)
      */
     private $total = 0;
 
