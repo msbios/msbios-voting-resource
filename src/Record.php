@@ -6,10 +6,10 @@
 namespace MSBios\Voting\Resource;
 
 /**
- * Class Entity
+ * Class Record
  * @package MSBios\Voting\Resource
  */
-class Entity
+abstract class Record
 {
     // ...
 }

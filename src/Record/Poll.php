@@ -4,11 +4,11 @@
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
 
-namespace MSBios\Voting\Resource\Entity;
+namespace MSBios\Voting\Resource\Record;
 
 /**
  * Class Poll
- * @package MSBios\Voting\Resource\Entity
+ * @package MSBios\Voting\Resource\Record
  */
 class Poll
 {
