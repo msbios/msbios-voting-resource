@@ -3,14 +3,13 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
-
 namespace MSBios\Voting\Resource\Record;
 
 /**
- * Interface RelationInterface
+ * Class VoteRelation
  * @package MSBios\Voting\Resource\Record
  */
-interface RelationInterface
+class VoteRelation implements RelationInterface
 {
     // ...
 }

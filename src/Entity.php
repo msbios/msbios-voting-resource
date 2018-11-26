@@ -11,5 +11,5 @@ namespace MSBios\Voting\Resource;
  */
 class Entity
 {
-
+    // ...
 }

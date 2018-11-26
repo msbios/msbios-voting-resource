@@ -5,11 +5,13 @@
  */
 namespace MSBios\Voting\Resource\Record\Poll;
 
+use MSBios\Voting\Resource\Record\RelationInterface;
+
 /**
- * Class Relation
+ * Class PollRelation
  * @package MSBios\Voting\Resource\Record\Poll
  */
-class Relation
+class PollRelation implements RelationInterface
 {
-
+    // ...
 }
